@@ -29,26 +29,26 @@ def gpa():
 
         match Grade.lower():
 
-            case("A+"|"a+"): Grade = 5
+            case("a+"): Grade = 5.0
                 
-            case("A"|"a"): Grade = 4.75
+            case("a"): Grade = 4.75
                 
-            case("B+"|"b+"): Grade = 4.5
+            case("b+"): Grade = 4.5
                 
-            case("B"|"b"): Grade = 4
+            case("b"): Grade = 4.0
                 
-            case("C+"|"c+"): Grade = 3.5
+            case("c+"): Grade = 3.5
                 
-            case("C"|"c"): Grade = 3
+            case("c"): Grade = 3.0
                 
-            case("D+"|"d+"): Grade = 2.5
+            case("d+"): Grade = 2.5
                 
-            case("D"|"d"): Grade = 2
-                          
-            case("F"|"f"): Grade = 1
+            case("d"): Grade = 2.0
+
+            case("f"): Grade = 1.0
                 
             case _: Grade = float(Grade)
-                      
+
 
 
         # formula
